@@ -9,22 +9,22 @@ public class VrDebugDisplay : MonoBehaviour
     [SerializeField]
     private Text _display;
 
-    //TESTING
-    [SerializeField]
-    public int _counter = 0;
-    [SerializeField]
-    public OVRInput.Controller _activeController;
-    [SerializeField]
-    public OVRInput.Button _mapButtonInput;
+    ////TESTING////////////////////////////////////////////////
+    //[SerializeField]
+    //public int _counter = 0;
+    //[SerializeField]
+    //public OVRInput.Controller _activeController;
+    //[SerializeField]
+    //public OVRInput.Button _mapButtonInput;
 
-    private void Update() {
-        Debug.Log("time:" + Time.time);
-        Debug.Log(gameObject.name);
-        if (OVRInput.GetDown(_mapButtonInput, _activeController)) {
-            _counter++;
-            Debug.Log("Hello World" + _counter);
-        }
-    }
+    //private void Update() {
+    //    Debug.Log("time:" + Time.time);
+    //    Debug.Log(gameObject.name);
+    //    if (OVRInput.GetDown(_mapButtonInput, _activeController)) {
+    //        _counter++;
+    //        Debug.Log("Hello World" + _counter);
+    //    }
+    //}
 
     private void OnEnable() {
         Application.logMessageReceived += HandleLog;
